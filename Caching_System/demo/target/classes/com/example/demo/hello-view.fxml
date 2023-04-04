@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+   <children>
+      <Label fx:id="objectAddressLabel" layoutX="70.0" layoutY="35.0" text="Enter object address:" />
+      <TextField fx:id="objectAddressField" layoutX="70.0" layoutY="59.0" onAction="#onObjectAddressFieldChanged" />
+      <TextField fx:id="searchField" layoutX="71.0" layoutY="155.0" />
+      <Label layoutX="71.0" layoutY="123.0" text="Search object in cache system:" />
+      <Button fx:id="searchButton" layoutX="239.0" layoutY="155.0" mnemonicParsing="false" onAction="#onSearchButtonClicked" text="Search" />
+      <Button fx:id="addButton" layoutX="239.0" layoutY="59.0" mnemonicParsing="false" onAction="#onAddButtonClicked" text="Add" />
+      <Label fx:id="insertMessage" layoutX="300.0" layoutY="63.0" prefHeight="18.0" prefWidth="266.0" />
+      <Label fx:id="searchMessage" layoutX="315.0" layoutY="159.0" prefHeight="18.0" prefWidth="266.0" />
+   </children>
+</AnchorPane>
